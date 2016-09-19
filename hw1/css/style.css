@@ -1,0 +1,161 @@
+/* GLOBAL STYLES
+	* -------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+				  padding-bottom: 40px;
+						  color: #5a5a5a;
+				}
+				.testimonial {
+								  text-align: center;
+										margin-bottom: 30px;
+								}
+
+								.testimonial img {
+												  height: 4em;
+														border-radius: 3px;
+														margin-left: auto;
+														margin-right: auto;
+														display: block;
+														margin-top: 40px;
+														}
+section h1 {
+				  font-size: 1.8em;
+						line-height: 1em;
+						margin-bottom: .6em;
+						}
+
+						/* Same font-size and line-height as p element */
+						section ul li, section ol li {
+										  font-size: 1em;
+												margin-left: -10px;
+												line-height: 1.8;
+												}
+header {
+				  background-color: #999;
+						background-image: url(https://pp.vk.me/c626616/v626616604/fcc5/eCq3iDButLc.jpg);
+						background-repeat: no-repeat;
+						background-position: center center;
+						background-size: cover;
+						/*margin-bottom: 4em;*/
+						text-align: center;
+						height: 600px;
+						}
+header h1 {
+				  color: white;
+						font-size: 2em;
+						margin-top: 50px;
+						letter-spacing: 1px;
+						position: relative;
+						top: 400px;
+						font-weight: 500;
+						}
+header p {
+						color: white ;
+						font-size: 1.5em;
+						padding-bottom: 1.3em;
+						padding-top: .5em;
+						position: relative;
+						top: 420px;
+						}
+blockquote {
+				    font-size:36px; 
+								margin-left:10px;
+								margin-bottom:40px;
+								font: 200% sans-serif;
+								}	
+/* CUSTOMIZE THE CAROUSEL
+* -------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+								 height: 500px;
+								 margin-bottom: 40px;
+									}
+				/* Since positioning the image, we need to help out the caption */
+				.carousel-caption {
+								  z-index: 10;
+						}
+
+						/* Declare heights because of positioning of img element */
+						.carousel .item {
+										  height: 500px;
+												width:100%;
+								    background-color: #777;
+													}
+										.carousel-inner > .item > img {
+														  position: absolute;
+																top: 0;
+																left: 0;
+																min-width: 100%;
+																height: 500px;
+																}
+
+
+.marketing .col-lg-4 {
+				  margin-bottom: 20px;
+				  margin-top: 20px;
+						text-align: center;
+				}
+				.marketing h2 {
+								  font-weight: normal;
+						}
+						.marketing .col-lg-4 p {
+										  margin-right: 10px;
+												  margin-left: 10px;
+										}
+
+
+										/* Featurettes
+											* ------------------------- */
+
+.featurette-divider {
+				  margin: 40px 0; /* Space out the Bootstrap <hr> more */
+		}
+
+		/* Thin out the marketing headings */
+		.featurette-heading {
+						  font-weight: 300;
+								  line-height: 1;
+										  letter-spacing: -1px;
+								}
+
+
+								/* RESPONSIVE CSS
+									* -------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+				.navbar-wrapper {
+						    margin-top: 50px;
+										  }
+		.navbar-wrapper .container {
+								padding-right: 15px;
+								padding-left: 15px;
+								}
+		.navbar-wrapper .navbar {
+								padding-right: 0;
+								padding-left: 0;
+								}
+
+/* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+								border-radius: 4px;
+								}
+
+/* Bump up size of carousel content */
+		.carousel-caption p {
+								margin-bottom: 10px;
+								font-size: 21px;
+								line-height: 1.4;
+								}
+
+		.featurette-heading {
+								font-size: 50px;
+								}
+
+		@media (min-width: 992px) {
+		.featurette-heading {
+								margin-top: 120px;
+								}
+
