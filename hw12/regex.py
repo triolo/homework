@@ -5,15 +5,16 @@ def isform():
     regpg =r"в(ш(ую(ся)?|ая(ся)?|е(й(ся)?|е(ся)?|м(ся)?|го(ся)?|му(ся)?|ю(ся)?)|и(й(ся)?|м(и(ся)?|ся)?|х(ся)?|сь|е(ся)?)?))?"
     regstrad =r"т(ая?|ую|о(й|е|ю|го|м(у)?)?|ы(е|й|ми?|х)?)?"
     regOPEN = r"\bоткр(о(й(те(сь)?|ся)?|ю(сь|т(ся)?)?|е(шь(ся)?|т(е(сь)?|ся)?|м(ся)?))|ы(ть(ся)?|л(а(сь)?|о(сь)?|и(сь)?|ся)?|в(ш(ую(ся)?|ая(ся)?|е(й(ся)?|е(ся)?|м(ся)?|го(ся)?|му(ся)?|ю(ся)?)|и(й(ся)?|м(и(ся)?|ся)?|х(ся)?|сь|е(ся)?)?))?|т(ая?|ую|о(й|е|ю|го|м(у)?)?|ы(е|й|ми?|х)?)?))\b"
-    v = 'ся'
+    result = []
     with open("open.txt", "r", encoding="utf-8") as f:
         forms = f.readlines()
         for form in forms:
             m = re.search(regOPEN, form.strip())
             if m != None:
-                print(form.strip() +" S", m.group(), m.start(), m.end())
-            else:
-                print(form.strip() +" F")
+                if form not in result:
+                    result.append(form)
+        for item in result:
+            print(item.strip())
     return 0
 
 isform()
